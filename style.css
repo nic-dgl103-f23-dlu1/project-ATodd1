@@ -112,6 +112,7 @@ header .headercontainer1 {
 
 .inspire{
     text-align: center;
+    margin: auto;
 }
 .inspire img{
     width: 100%;
@@ -121,6 +122,7 @@ header .headercontainer1 {
     font-size: 14px;
     color: rgb(242, 211, 211);
    margin: auto;
+   margin-top: 20px;
    font-family: Ubuntu, sans-serif;
 }
 .inspire p{
@@ -130,6 +132,7 @@ header .headercontainer1 {
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.3px;
+
 }
 /* ===============
    Services Section
@@ -138,6 +141,7 @@ header .headercontainer1 {
     font-family: Ubuntu, sans-serif;
     width: 100%;
     border-collapse: collapse;
+    margin-top: 40px;
    
    }
    caption{
@@ -156,7 +160,7 @@ header .headercontainer1 {
     
    }
    th{
-    color:rgb(248, 209, 209);
+    color:rgb(251, 232, 232);
    }
    tbody{
     background-color:rgb(248, 209, 209);
@@ -185,9 +189,11 @@ header .headercontainer1 {
    ===============*/
 
    .action{
-    border: 1px solid rgb(145, 14, 14);
+    border: 5px solid rgb(113, 11, 11);
     border-radius: 5%;
     text-align: center;
+   margin: 20px;
+   background-color: rgb(33, 33, 33)
    
     
    }
@@ -202,6 +208,7 @@ header .headercontainer1 {
     font-family: Ubuntu, sans-serif;
     font-size: 12px;
     font-weight: 300;
+   
    }
 .action p a{
     text-decoration: none;
@@ -210,6 +217,10 @@ header .headercontainer1 {
 }
 .action p a:hover{
     color: white;
+}
+.actionp{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .container{
         display: flex;
