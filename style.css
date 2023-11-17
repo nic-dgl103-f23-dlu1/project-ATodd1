@@ -15,8 +15,8 @@ header{
 
 }
 header img{
-    width: 10%;
-    height: 10%;
+    width: 120px;
+    height: 40px;
 }
 
 header .headercontainer1 {
@@ -80,8 +80,8 @@ header .headercontainer1 {
 }
 
 @keyframes shadowText {
-    from { text-shadow: 0 0 5px red; }
-    to { text-shadow: 0 0 20px blue; }
+    from { text-shadow: 0 0 10px red; }
+    to { text-shadow: 0 0 20px grey; }
 }
 
 /* ===============
@@ -123,6 +123,14 @@ header .headercontainer1 {
    margin: auto;
    font-family: Ubuntu, sans-serif;
 }
+.inspire p{
+    font-family: Merriweather, sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
 /* ===============
    Services Section
    ===============*/
@@ -130,10 +138,44 @@ header .headercontainer1 {
     font-family: Ubuntu, sans-serif;
     width: 100%;
     border-collapse: collapse;
+   
+   }
+   caption{
+    font-family: Ubuntu, sans-serif;
+    color:rgb(248, 209, 209);
+    font-size: 20px;
+    
+
+   }
+   thead{
+    background-color:rgb(105, 10, 10);
    }
    td, th{
     border: 1px solid rgb(44, 1, 1);
     padding: 10px;
+    
+   }
+   th{
+    color:rgb(248, 209, 209);
+   }
+   tbody{
+    background-color:rgb(248, 209, 209);
+   }
+   tr:nth-child(even){
+    background-color:rgb(251, 232, 232);
+   }
+   td{
+    font-family: Merriweather, sans-serif;
+    font-size: 12px;
+    color: rgb(44, 1, 1);
+   }
+   .text{
+    background-color: rgb(253, 156, 156);
+   }
+   .text td{
+    font-family: Ubuntu, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
    }
 
 
@@ -143,9 +185,11 @@ header .headercontainer1 {
    ===============*/
 
    .action{
-    border: 1px solid red;
+    border: 1px solid rgb(145, 14, 14);
     border-radius: 5%;
     text-align: center;
+   
+    
    }
    .action h3{
     color: white;
@@ -162,6 +206,10 @@ header .headercontainer1 {
 .action p a{
     text-decoration: none;
     color: rgb(249, 109, 109);
+    
+}
+.action p a:hover{
+    color: white;
 }
 .container{
         display: flex;
@@ -172,17 +220,21 @@ header .headercontainer1 {
    ===============*/
     footer{
         display: flex;
+        justify-content: space-between;
+        background-color: black;
     
     }
 
    footer img{
-    width: 10%;
-    height: 10%;
+    width: 120px;
+    height: 40px;
    }
    footer p{
     color: white;
-    font-size: 12px;
+    font-size: 8px;
     font-family: Ubuntu, sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
    }
 
 
