@@ -256,6 +256,7 @@ header .headercontainer1 {
     font-family: Ubuntu, sans-serif;
     margin-top: auto;
     margin-bottom: auto;
+    padding-right: 10px;
    }
 
 @media only screen and (min-width: 1200px) {
@@ -424,6 +425,7 @@ header .headercontainer1 {
    padding-left: 350px;
    padding-right: 350px;
    padding-top: 0px;
+   
    }
    .linkp{
     padding-top: 50px;
