@@ -55,6 +55,23 @@ header .headercontainer1 {
     padding: 0;
     list-style: none;
 }
+header li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Ubuntu, sans-serif;
+    transition: 0.5s;
+    letter-spacing: 0.1em;
+}
+.headUl li a:hover{
+    letter-spacing: 0.25em;
+    color: var(--clr);
+    text-shadow: 0 0 35px var(--clr);
+}
+.show-items {
+    display: flex;
+    align-items: flex-end;
+  }
 /* ===============
     hero section
    ===============*/
@@ -241,22 +258,32 @@ header .headercontainer1 {
    ===============*/
     footer{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         background-color: black;
+        
     
     }
 
    footer img{
     width: 120px;
     height: 40px;
+   
    }
    footer p{
     color: white;
     font-size: 8px;
     font-family: Ubuntu, sans-serif;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-right: 10px;
+  
+   margin: auto;
+   
+   }
+   .wrapper-widthf{
+    display: flex;
+   
+   }
+   footer .wrapper-width{
+    width: 375px;
+    margin: auto;
    }
 
 @media only screen and (min-width: 1200px) {
@@ -264,6 +291,10 @@ header .headercontainer1 {
 /* ===============
    Header section
    ===============*/
+   .wrapper-width {
+  width: 1170px;
+  margin: auto;
+}
     .toggle{
         display: none;
     }
@@ -434,6 +465,7 @@ header .headercontainer1 {
    /* ===============
    Footer Section
    ===============*/
+   
 
    footer img{
     width: 20%;
@@ -443,3 +475,8 @@ header .headercontainer1 {
     font-size: 2rem;
     padding-right: 25px;
    }
+   footer .wrapper-width {
+    width: 1170px;
+    margin: auto;
+  }
+}
