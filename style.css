@@ -286,6 +286,144 @@ header li a{
     margin: auto;
    }
 
+   /*=============================================================================
+                             CONTACT US HTML PAGE
+    ==============================================================================*/
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.button-container a {
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+.button-container a:hover {
+    background: var(--clr);
+    color:  var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+
+}
+.button-container a:before{
+    content:  '';
+    position: absolute;
+    inset: 2px;
+    background: rgb(55, 55, 55);
+
+}
+.button-container a span{
+    position: relative;
+    z-index: 1;
+
+}
+
+/*=============================================================================
+                             FORM HTML PAGE
+    ==============================================================================*/
+.form-wrapper h2{
+    color: rgb(254, 232, 232);
+    text-shadow: 0 0 5px red; 
+    animation: shadowText 5s infinite alternate;
+    font-family: Merriweather, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    
+}
+.form-wrapper p{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+    margin: 20px;
+    border: 5px solid rgb(113, 11, 11);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(70, 70, 70);
+    padding: 100px;
+    }
+form{
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"]{
+    
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+}
+label{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+.label-required{
+    color: red;
+}
+fieldset label{
+    font-size: 1.5rem;
+}
+legend{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+form .button-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+input[type="submit"]{
+    font-family: Ubuntu, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid rgb(113, 11, 11);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(244, 177, 177);
+    transition: 0.5s;
+
+}
+input[type="submit"]:hover{
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px red;
+    
+}
+input[value="Submit"]:hover{
+    color: red;
+}
+
 @media only screen and (min-width: 1200px) {
     
 /* ===============

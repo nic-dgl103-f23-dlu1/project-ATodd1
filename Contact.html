@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
   </head>
   <body>
   <header>
@@ -46,26 +52,20 @@
 
 
     <p>For more information, or to book an appointment contact us today!</p>
-    <a href="mailto:nicole@nicolecahoon.com" class="contactButton">
-        <button type="button">Email Us</button>
+<div class="button-container">
+    <a href="mailto:nicole@nicolecahoon.com" style="--clr:rgb(255, 0, 72)" class="contactButton">
+        <span>Email Us</span>
     </a>
-    <a href="tel:+250-871-1121" class="contactButton">
-        <button type="button">Call Us</button>
+    <a href="tel:+250-871-1121" style="--clr:rgb(555, 128, 0)" class="contactButton">
+        <span>Call Us</span>
     </a>
 
-    <!--This isnt right, im just putting it here to remind me that im putting a form here later-->
-    <input type="checkbox" id="showFormToggle" style="display: none;">
-        <label for="showFormToggle">
-            <button type="button">Open Form</button>
-        </label>
-
-    <form id="myForm" style="display: none;">
-        <!-- The form fields here -->
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
-    </form>
+    <a href="Form.html" style="--clr:rgb(238, 555, 0)" class="contactButton">
+            <span>sign up</span>
+    </a>
+       
+</div>
+   
     <p>Follow us on Facebook for tax tips! </p>
     <!-- There will also be a facebook link in here somewhere-->
 </section>
