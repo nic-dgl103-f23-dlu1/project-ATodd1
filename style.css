@@ -7,6 +7,10 @@ body{
    
 }
 
+/*===============================================================================
+                    HEADER SECTION
+=================================================================================*/
+
 header{
     background: black;
     padding: 10px 10px 0;
@@ -40,6 +44,8 @@ header .headercontainer1 {
 }
  nav .toggle{
     align-self: flex-end;
+   
+ 
    
     
     
@@ -289,14 +295,47 @@ header li a{
    /*=============================================================================
                              CONTACT US HTML PAGE
     ==============================================================================*/
+.WheresWaldo{
+    align-items: center;
+    text-align: center;
+   
+}
 
+.WheresWaldo h2{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.button-container p{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+   padding: 0px 20px;
+
+}
+iframe{
+    width: 50%;
+    height: 50%;
+    /*margin-left: 25%;*/
+   
+}
 .button-container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50%;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
+    border: 5px solid rgb(113, 11, 11);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(70, 70, 70);
+    margin: 20px;
+    padding-bottom: 30px;
+   
+   
 }
 
 .button-container a {
@@ -305,7 +344,7 @@ header li a{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 0.1em;
     font-weight: 400;
     padding: 10px 30px;
@@ -327,7 +366,7 @@ header li a{
 
 }
 .button-container a span{
-    position: relative;
+   position: relative;
     z-index: 1;
 
 }
@@ -340,7 +379,7 @@ header li a{
     text-shadow: 0 0 5px red; 
     animation: shadowText 5s infinite alternate;
     font-family: Merriweather, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
     margin-top: 0px;
     
@@ -366,7 +405,7 @@ header li a{
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     background-color: rgb(70, 70, 70);
-    padding: 100px;
+    padding: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
     }
@@ -621,6 +660,16 @@ input[value="Submit"]:hover{
     width: 1170px;
     margin: auto;
   }
+
+  /*=============================================================================
+                             CONTACT HTML PAGE
+    ==============================================================================*/
+
+   /* .button-container{
+        float:right;
+    }*/
+
+
   /*=============================================================================
                              FORM HTML PAGE
     ==============================================================================*/
@@ -646,5 +695,9 @@ fieldset label{
     font-size: 2.5rem; 
     padding-right: 10px;
 }
+
+/*=============================================================================
+                             FORM HTML PAGE
+    ==============================================================================*/
 
 }
