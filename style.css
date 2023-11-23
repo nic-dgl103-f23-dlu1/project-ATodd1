@@ -340,14 +340,15 @@ header li a{
     text-shadow: 0 0 5px red; 
     animation: shadowText 5s infinite alternate;
     font-family: Merriweather, sans-serif;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 900;
+    margin-top: 0px;
     
 }
 .form-wrapper p{
     color: white;
     font-family: Ubuntu, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     padding-bottom: 20px;
     text-align: center;
@@ -360,11 +361,14 @@ header li a{
    
     
     margin: 20px;
+    
     border: 5px solid rgb(113, 11, 11);
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     background-color: rgb(70, 70, 70);
     padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     }
 form{
     display: flex;
@@ -389,7 +393,7 @@ label{
     color: red;
 }
 fieldset label{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 legend{
     color: white;
@@ -617,4 +621,30 @@ input[value="Submit"]:hover{
     width: 1170px;
     margin: auto;
   }
+  /*=============================================================================
+                             FORM HTML PAGE
+    ==============================================================================*/
+.form-wrapper h2{
+    font-size: 4rem;
+}
+.form-wrapper p{
+    font-size: 2rem;
+}
+input[type="text"]{
+    font-size: 2rem;
+}
+input[type="email"]{
+    font-size: 2rem;
+}
+label{
+    font-size: 2.5rem;
+}
+legend{
+    font-size: 2.5rem;
+}
+fieldset label{
+    font-size: 2.5rem; 
+    padding-right: 10px;
+}
+
 }
