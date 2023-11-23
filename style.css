@@ -476,28 +476,39 @@ input[value="Submit"]:hover{
     ==============================================================================*/
 
 .Testi {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Testi img{
+    width: 33.33%;
+    float: left;
+
+}
+.flexbox1{
+    display: flex;
+    flex-direction: column;
+}
+.flexbox2{
+    display: flex;
+    flex-direction: column;
 }
 
 .Testi h2{
-    color: rgb(254, 232, 232);
+    color: rgb(255, 255, 255);
     text-shadow: 0 0 5px red; 
-    animation: shadowText 5s infinite alternate;
     font-family: Merriweather, sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
-    margin-top: 0px;
+    margin-top: 50px;
     padding-bottom: 50px;
-    grid-column: 1/3;
+    text-align: center;
+ 
    
 
 }
 
 .Testi h3{
-    color: rgb(113, 11, 11);
+    color:  rgb(254, 232, 232);
     font-family: Merriweather, sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
@@ -506,19 +517,24 @@ input[value="Submit"]:hover{
 }
 .Testi p{
     margin: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: Ubuntu, sans-serif;
     font-size: 12px;
     font-weight: 300;
     border-left: 2px solid red;
     padding-left: 5px;
+    
 }
 .textbox{
-    background-color: rgb(255, 255, 255);
-   margin-left: 10px;
+    border: 5px solid rgb(113, 11, 11);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(70, 70, 70);
+   margin: 10px;
    border-radius: 10px;
-   margin-right: 20%;
    padding-bottom: 5px;
+   flex: 1;
+   
 }
 @media only screen and (min-width: 1200px) {
     
