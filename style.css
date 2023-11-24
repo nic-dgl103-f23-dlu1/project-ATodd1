@@ -480,9 +480,12 @@ input[value="Submit"]:hover{
   flex-direction: column;
 }
 .Testi img{
-    width: 33.33%;
-    float: left;
+   object-fit:contain;
+   width: 20%;
 
+}
+.rowbox{
+    display: flex;
 }
 .flexbox1{
     display: flex;
@@ -510,13 +513,17 @@ input[value="Submit"]:hover{
 .Testi h3{
     color:  rgb(254, 232, 232);
     font-family: Merriweather, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1;
     font-weight: 900;
-    padding: 10px 10px 0px 10px;
+   text-align: right;
+   margin-top: 1px;
+   font-style: italic;
+   padding-right: 10px;
 
 }
 .Testi p{
     margin: 20px;
+    margin-bottom: 0px;
     color: rgb(255, 255, 255);
     font-family: Ubuntu, sans-serif;
     font-size: 12px;
