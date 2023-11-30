@@ -385,6 +385,21 @@ iframe{
     z-index: 1;
 
 }
+.facebook p{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding-right: 10px;
+}
+.facebook{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.facebookimg .fa-facebook {
+    font-size: 2rem;
+}
 
 /*=============================================================================
                              FORM HTML PAGE
@@ -789,6 +804,12 @@ input[value="Submit"]:hover{
     gap: 50px;
    
    }
+   .facebook p{
+    font-size: 1.5rem;
+   }
+   .facebookimg .fa-facebook {
+    font-size: 3rem;
+}
 
 
   /*=============================================================================
@@ -824,5 +845,41 @@ input[type="submit"]{
                         TESTIMONIALS HTML PAGE
     ==============================================================================*/
 
+.flexbox1, .flexbox2{
+    flex-direction: row;
+}
+.Testi h2{
+    font-size: 2rem;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.toph2{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.rowbox{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.textbox{
+    position: relative;
+}
+.Testi img{
+    width: 50%;
 
+}
+.Testi p{
+    border: none;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+.Testi h3{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+}
 }
