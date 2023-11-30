@@ -69,6 +69,9 @@ header li a{
     transition: 0.5s;
     letter-spacing: 0.1em;
 }
+:root {
+    --clr: rgb(255, 0, 72); 
+  }
 .headUl li a:hover{
     letter-spacing: 0.25em;
     color: var(--clr);
@@ -116,7 +119,7 @@ header li a{
 .about{
     margin-left: 5%;
 }
-.about h3{
+.about h2{
     font-family: Ubuntu, sans-serif;
     font-weight: 500;
     color: rgb(242, 211, 211);
@@ -538,7 +541,7 @@ input[value="Submit"]:hover{
 .Testi h3{
     color:  rgb(254, 232, 232);
     font-family: Merriweather, sans-serif;
-    font-size: 1;
+    font-size: 1rem;
     font-weight: 900;
    text-align: right;
    margin-top: 1px;
@@ -636,7 +639,7 @@ input[value="Submit"]:hover{
     background-color: rgb(70, 70, 70);
    
    }
-   .about h3{
+   .about h2{
    font-size: 4rem;
    text-align: center;
    }
@@ -847,6 +850,7 @@ input[type="submit"]{
 
 .flexbox1, .flexbox2{
     flex-direction: row;
+  
 }
 .Testi h2{
     font-size: 2rem;
@@ -865,6 +869,7 @@ input[type="submit"]{
 }
 .textbox{
     position: relative;
+   
 }
 .Testi img{
     width: 50%;
