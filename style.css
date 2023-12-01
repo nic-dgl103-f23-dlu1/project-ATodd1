@@ -1,0 +1,887 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0px;
+    background-color:  rgb(55, 55, 55); 
+   
+}
+
+/*===============================================================================
+                    HEADER SECTION
+=================================================================================*/
+
+header{
+    background: black;
+    padding: 10px 10px 0;
+}
+.flexContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+header img{
+    width: 120px;
+    height: 40px;
+}
+
+header .headercontainer1 {
+    text-align: right;
+}
+
+.headerNav1{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.headerNav{
+    display: flex;
+   
+   
+  
+}
+ nav .toggle{
+    align-self: flex-end;
+   
+ 
+   
+    
+    
+    
+}
+.toggle i{
+    color: white;
+}
+.headUl{
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Ubuntu, sans-serif;
+    transition: 0.5s;
+    letter-spacing: 0.1em;
+}
+:root {
+    --clr: rgb(255, 0, 72); 
+  }
+.headUl li a:hover{
+    letter-spacing: 0.25em;
+    color: var(--clr);
+    text-shadow: 0 0 35px var(--clr);
+}
+.show-items {
+    display: flex;
+    align-items: flex-end;
+  }
+/* ===============
+    hero section
+   ===============*/
+
+.hero {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    background-size: cover;  
+    background-position: center;
+    background-image: url(images/buildingImage.jpg);
+
+   }
+.hero h1{
+    color: rgb(254, 232, 232);
+    text-shadow: 0 0 5px red; /* Initial text shadow */
+    animation: shadowText 5s infinite alternate;
+    font-family: Merriweather, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: auto;
+    
+}
+
+@keyframes shadowText {
+    from { text-shadow: 0 0 10px red; }
+    to { text-shadow: 0 0 20px grey; }
+}
+
+/* ===============
+    About section
+   ===============*/
+.about{
+    margin-left: 5%;
+}
+.about h2{
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    color: rgb(242, 211, 211);
+    font-size: 16px;
+}
+.about p{
+    font-family: Ubuntu, sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+/* ===============
+    Inspire Section
+   ===============*/
+
+.inspire{
+    text-align: center;
+    margin: auto;
+}
+.inspire img{
+    width: 100%;
+}  
+.inspire h3{
+    white-space: nowrap;
+    font-size: 14px;
+    color: rgb(242, 211, 211);
+   margin: auto;
+   margin-top: 20px;
+   font-family: Ubuntu, sans-serif;
+}
+.inspire p{
+    font-family: Merriweather, sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+
+}
+/* ===============
+   Services Section
+   ===============*/
+   table{
+    font-family: Ubuntu, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+   
+   }
+   caption{
+    font-family: Ubuntu, sans-serif;
+    color:rgb(248, 209, 209);
+    font-size: 20px;
+    
+
+   }
+   thead{
+    background-color:rgb(105, 10, 10);
+   }
+   td, th{
+    border: 1px solid rgb(44, 1, 1);
+    padding: 10px;
+    
+   }
+   th{
+    color:rgb(251, 232, 232);
+   }
+   tbody{
+    background-color:rgb(248, 209, 209);
+   }
+   tr:nth-child(even){
+    background-color:rgb(251, 232, 232);
+   }
+   td{
+    font-family: Merriweather, sans-serif;
+    font-size: 12px;
+    color: rgb(44, 1, 1);
+   }
+   .text{
+    background-color: rgb(253, 156, 156);
+   }
+   .text td{
+    font-family: Ubuntu, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+   }
+
+
+
+   /* ===============
+   Call to action section
+   ===============*/
+
+   .action{
+    border: 5px solid rgb(113, 11, 11);
+    border-radius: 5px;
+    text-align: center;
+   margin: auto;
+   background-color: rgb(33, 33, 33)
+
+   
+    
+   }
+   .action h3{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+   }
+   .action p{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+   
+   }
+.action p a{
+    text-decoration: none;
+    color: rgb(249, 109, 109);
+    
+}
+.action p a:hover{
+    color: white;
+}
+.actionp{
+    padding-left: 100px;
+    padding-right: 100px;
+  
+}
+.actionp2{
+    padding-left: 100px;
+    padding-right: 100px;
+  
+}
+.container{
+        display: flex;
+        justify-content: space-around;
+    }
+/* ===============
+   Footer Section
+   ===============*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        
+    
+    }
+
+   footer img{
+    width: 120px;
+    height: 40px;
+   
+   }
+   footer p{
+    color: white;
+    font-size: 8px;
+    font-family: Ubuntu, sans-serif;
+  
+   margin: auto;
+   margin-right: 10px;
+   
+   }
+   .wrapper-widthf{
+    display: flex;
+   
+   }
+   footer .wrapper-width{
+    width: 375px;
+    margin: auto;
+   }
+
+   /*=============================================================================
+                             CONTACT US HTML PAGE
+    ==============================================================================*/
+.WheresWaldo{
+    align-items: center;
+    text-align: center;
+   
+}
+
+.WheresWaldo h2{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.button-container p{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+   padding: 0px 20px;
+
+}
+
+iframe{
+    width: 50%;
+    height: 50%;
+    /*margin-left: 25%;*/
+   
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+    gap: 10px;
+    border: 5px solid rgb(113, 11, 11);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(70, 70, 70);
+    margin: 20px;
+    padding-bottom: 30px;
+   
+   
+}
+.button-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    
+}
+
+.button-container a {
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+.button-container a:hover {
+    background: var(--clr);
+    color:  var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+
+}
+.button-container a:before{
+    content:  '';
+    position: absolute;
+    inset: 2px;
+    background: rgb(55, 55, 55);
+
+}
+.button-container a span{
+   position: relative;
+    z-index: 1;
+
+}
+.facebook p{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding-right: 10px;
+}
+.facebook{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.facebookimg .fa-facebook {
+    font-size: 2rem;
+}
+
+/*=============================================================================
+                             FORM HTML PAGE
+    ==============================================================================*/
+.form-wrapper h2{
+    color: rgb(254, 232, 232);
+    text-shadow: 0 0 5px red; 
+    animation: shadowText 5s infinite alternate;
+    font-family: Merriweather, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 0px;
+    
+}
+.form-wrapper p{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+    margin: 20px;
+    
+    border: 5px solid rgb(113, 11, 11);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(70, 70, 70);
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+form{
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"]{
+    
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+}
+label{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+.label-required{
+    color: red;
+}
+fieldset label{
+    font-size: 1rem;
+}
+legend{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+form .button-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+input[type="submit"]{
+    font-family: Ubuntu, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid rgb(113, 11, 11);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(244, 177, 177);
+    transition: 0.5s;
+
+}
+input[type="submit"]:hover{
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px red;
+    
+}
+input[value="Submit"]:hover{
+    color: red;
+}
+
+/*=============================================================================
+                        TESTIMONIALS HTML PAGE
+    ==============================================================================*/
+
+.Testi {
+  display: flex;
+  flex-direction: column;
+}
+.Testi img{
+   object-fit:contain;
+   width: 20%;
+
+}
+.rowbox{
+    display: flex;
+}
+.flexbox1{
+    display: flex;
+    flex-direction: column;
+}
+.flexbox2{
+    display: flex;
+    flex-direction: column;
+}
+
+.Testi h2{
+    color: rgb(255, 255, 255);
+    font-family: Merriweather, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 900;
+    margin-top: 50px;
+    padding: 20px 20px 50px 20px;
+    text-align: center;
+ 
+   
+
+}
+
+.Testi h3{
+    color:  rgb(254, 232, 232);
+    font-family: Merriweather, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+   text-align: right;
+   margin-top: 1px;
+   font-style: italic;
+   padding-right: 10px;
+
+}
+.Testi p{
+    margin: 20px;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    border-left: 2px solid red;
+    padding-left: 5px;
+    
+}
+.textbox{
+    border: 5px solid rgb(113, 11, 11);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(70, 70, 70);
+   margin: 10px;
+   border-radius: 10px;
+   padding-bottom: 5px;
+   flex: 1;
+   
+}
+@media only screen and (min-width: 1200px) {
+    
+/* ===============
+   Header section
+   ===============*/
+   .wrapper-width {
+  width: 1170px;
+  margin: auto;
+}
+    .toggle{
+        display: none;
+    }
+    header img{
+        width: 20%;
+        height: 20%;
+    }
+    .headercontainer1{
+      margin: auto;
+      margin-bottom: 5px;
+      margin-left: 160px;
+    }
+    .headUl{
+        display: flex;
+        flex-direction: row; 
+        
+    }
+    .headUl li{
+       padding-right: 100px;
+       
+    }
+    .headUl li a{
+        text-decoration: none;
+        font-size: 2.5rem;
+        color: white;
+        transition: 0.5s;
+        letter-spacing: 0.1em;
+       
+    }
+    /* I saw this on a video and wanted to see if I could do it too */
+    .headUl li a:hover{
+        letter-spacing: 0.25em;
+        color: var(--clr);
+        text-shadow: 0 0 35px var(--clr);
+    }
+  
+/* ===============
+    hero section
+   ===============*/
+   .hero{
+    background-image: url(images/buildingImageBig.jpg);
+   }
+   .hero h1{
+    font-size: 6rem;
+   }
+
+  
+   /* ===============
+    About section
+   ===============*/
+
+   .about{
+    margin: 20px;
+    border: 5px solid rgb(113, 11, 11);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(70, 70, 70);
+   
+   }
+   .about h2{
+   font-size: 4rem;
+   text-align: center;
+   }
+   .about p{
+    font-size: 1.5rem;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-weight: 400;
+    
+   }
+   .bottomp{
+    padding-bottom: 30px;
+   }
+
+   /* ===============
+    Inspire Section
+   ===============*/
+
+   .inspire{
+   display: flex;
+   flex-direction: column;
+   margin: 50px;
+
+   }
+   .inspire img{
+    width: 50%;
+    padding: 50px;
+   }
+   .clip{
+    clip-path:polygon(  50% 0%, 80% 25%, 80% 75%, 50% 100%, 20% 75%, 20% 25%);
+   }
+   .inspire h3{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: Merriweather, sans-serif;
+    text-shadow: 0 0 35px rgb(0, 0, 0);
+    color: rgb(241, 187, 187);
+   }
+   .inspire p{
+    font-size: 2rem;
+    font-weight: 300;
+    padding-left: 300px;
+    padding-right: 300px;
+    text-shadow: 0 0 35px rgb(0, 0, 0);
+   }
+
+   /* ===============
+   Services Section
+   ===============*/
+.services{
+    border: 5px solid rgb(113, 11, 11);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(70, 70, 70);
+   margin: 20px;
+}
+   table{
+    margin: auto;
+  width: 70%;
+  margin-bottom: 50px;
+  
+  
+   
+   }
+   caption{
+    font-size: 3rem;
+    padding-bottom: 20px;
+    padding-top: 50px;
+   }
+ 
+   th{
+    font-size: 2rem;
+   }
+   .text td{
+    font-size: 1.7rem;
+   }
+   td{
+    font-size: 1.3rem;
+   }
+  
+   /* ===============
+   Call to action section
+   ===============*/
+
+   .action{
+    border-radius: 20px;
+    margin: 20px;
+   }
+  
+
+   .action h3{
+    font-size: 4rem;
+   }
+   .action p{
+    font-size: 2rem;
+    
+   }
+   .actionp{
+   padding-left: 350px;
+   padding-right: 350px;
+   padding-top: 0px;
+   
+   }
+   .linkp{
+    padding-top: 50px;
+   }
+
+   /* ===============
+   Footer Section
+   ===============*/
+   
+
+   footer img{
+    width: 20%;
+    height: 20%;
+   }
+   footer p{
+    font-size: 2rem;
+    padding-right: 25px;
+   }
+   footer .wrapper-width {
+    width: 1170px;
+    margin: auto;
+  }
+
+  /*=============================================================================
+                             CONTACT HTML PAGE
+    ==============================================================================*/
+.WheresWaldo{
+    text-align: left;
+}
+   .WheresWaldo h2{
+    float: left;
+    margin-left: 50px;
+    font-size: 3rem;
+    padding-top: 160px;
+    padding-right: 50px;
+    
+  
+    
+   }
+   iframe{
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+   height: 400px;
+   }
+   .button-container{
+    padding: 50px;
+    padding-top: 0px;
+    margin-top: 50px;
+   }
+   .button-container p{
+    font-size: 2rem;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    
+   }
+   .button-container a{
+    font-size: 2rem;
+   }
+   .button-row{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+   
+   }
+   .facebook p{
+    font-size: 1.5rem;
+   }
+   .facebookimg .fa-facebook {
+    font-size: 3rem;
+}
+
+
+  /*=============================================================================
+                             FORM HTML PAGE
+    ==============================================================================*/
+.form-wrapper h2{
+    font-size: 4rem;
+}
+.form-wrapper p{
+    font-size: 2rem;
+}
+input[type="text"]{
+    font-size: 2rem;
+}
+input[type="email"]{
+    font-size: 2rem;
+}
+label{
+    font-size: 2.5rem;
+}
+legend{
+    font-size: 2.5rem;
+}
+fieldset label{
+    font-size: 2.5rem; 
+    padding-right: 10px;
+}
+input[type="submit"]{
+    font-size: 3rem;
+}
+
+/*=============================================================================
+                        TESTIMONIALS HTML PAGE
+    ==============================================================================*/
+
+.flexbox1, .flexbox2{
+    flex-direction: row;
+  
+}
+.Testi h2{
+    font-size: 2rem;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.toph2{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.rowbox{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.textbox{
+    position: relative;
+   
+}
+.Testi img{
+    width: 50%;
+
+}
+.Testi p{
+    border: none;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+.Testi h3{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+}
+}
